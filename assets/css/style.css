@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: blanchedalmond;
+}
+
+header {
+    text-align: center;
+    height: 80px;
+    background-color: blue;
+    color: cornsilk;
+    font-size: 50px;
+    display: block; 
+}
+
+main {
+}
+
+#content {
+    width: 75%;
+}
+
+#currentCity {
+    border: 1px solid black;
+}
+
+aside {
+    width: 25%;
+    display: block;
+}
+
+#fiveDay {
+    display: inline;
+}
+
+#search {
+    display: block;
+    border-bottom: 1px solid black;
+}
+
+
+
+.searchBtn {
+    width: 100%;
+    height: 30px;
+    margin: 10px;
+    color: cornsilk;
+    background-color: lightskyblue;
+
+}
+
+.searchBtn:hover {
+    background: rgb(35, 35, 194);
+}
+
+
+.cityBtn {
+    width: 100%;
+    height: 30px;
+    margin: 10px;
+}
+
+.cityBtn:hover {
+
+}
