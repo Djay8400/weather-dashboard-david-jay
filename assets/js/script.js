@@ -64,13 +64,9 @@ function getSearchValue(buttonValue) {
                 .then(function (data) {
                     console.log(data)
                     
-                     
-            
                     //todays dashboard
 
-
                     var currentIcon = document.createElement('img');
-
                     var weatherIcon = data.current.weather[0].icon;
                     currentIcon.src = 'http://openweathermap.org/img/wn/' + weatherIcon + '@2x.png';
                     city.appendChild(currentIcon);
@@ -93,11 +89,6 @@ function getSearchValue(buttonValue) {
 
                     //forecast day 2
 
-                    //icon (working on)
-
-                    // var currentIcon = document.createElement('li');
-                    // currentIcon.textContent = data.current.weather[0].icon;
-                    // city.appendChild(currentIcon);
                     var forecastDate2 = document.createElement('li');
                     forecastDate2.textContent = date2
                     second.appendChild(forecastDate2);
@@ -120,12 +111,6 @@ function getSearchValue(buttonValue) {
                     second.appendChild(humid2);
 
                     //forecast day 3
-
-                    //icon (working on)
-
-                    // var currentIcon = document.createElement('li');
-                    // currentIcon.textContent = data.current.weather[0].icon;
-                    // city.appendChild(currentIcon);
 
                     var forecastDate3 = document.createElement('li');
                     forecastDate3.textContent = date3;
@@ -150,12 +135,6 @@ function getSearchValue(buttonValue) {
 
                     //forecast day 4
 
-                    //icon (working on)
-
-                    // var currentIcon = document.createElement('li');
-                    // currentIcon.textContent = data.current.weather[0].icon;
-                    // city.appendChild(currentIcon);
-
                     var forecastDate4 = document.createElement('li');
                     forecastDate4.textContent = date4;
                     fourth.appendChild(forecastDate4);
@@ -179,12 +158,6 @@ function getSearchValue(buttonValue) {
 
                     //forecast day 5
 
-                    //icon (working on)
-
-                    // var currentIcon = document.createElement('li');
-                    // currentIcon.textContent = data.current.weather[0].icon;
-                    // city.appendChild(currentIcon);
-
                     var forecastDate5 = document.createElement('li');
                     forecastDate5.textContent = date5;
                     fifth.appendChild(forecastDate5);
@@ -207,12 +180,6 @@ function getSearchValue(buttonValue) {
                     fifth.appendChild(humid5);
 
                     //forecast day 6
-
-                    //icon (working on)
-
-                    // var currentIcon = document.createElement('li');
-                    // currentIcon.textContent = data.current.weather[0].icon;
-                    // city.appendChild(currentIcon);
 
                     var forecastDate6 = document.createElement('li');
                     forecastDate6.textContent = date6;
@@ -239,28 +206,3 @@ function getSearchValue(buttonValue) {
                 });
         });
 }        
-
-//searchButton.addEventListener('click', getSearchValue);
-    //searchButton.addEventListener('click', getApi);
-
-
-
-
-// fetch('https://api.github.com/orgs/twitter/public_members')
-//   .then(function (response) {
-//     return response.json();
-//   })
-//   .then(function (data) {
-//     console.log('Twitter Public Members: Raw data \n----------');
-//     console.log(data);
-//   });
-
-// fetch('https://api.github.com/orgs/twitter/repos')
-//   .then(function (response) {
-//     return response.json();
-//   })
-//   .then(function (data) {
-//     console.log('Twitter Repositories: Names only \n----------');
-//     for (var i = 0; i < data.length; i++) {
-//       console.log(data[i].name);
-//     }
