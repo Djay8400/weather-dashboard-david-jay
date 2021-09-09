@@ -17,35 +17,40 @@
         <div class="row">
             <aside class="col-3">
                 <div id="search">
-                    <label for="field">Search for a City:</label>
+                    <label for="field"><strong>Search for a City:</strong></label>
                     <input type="text" id="field">
-                    <button type="button" id="searchBtn" onclick="getSearchValue()">Search</button>
+                    <button type="button" class="searchBtn" onclick="getSearchValue()">Search</button>
                 </div>
-                <div>
+                <div id="histBtns">
                     
                 </div>    
             </aside>
             <div id="content" class="col-9">
                 <div>
+                    <h1>Todays Weather:</h1>
+                </div>
+                <div>
                     <h1 id="searchDate"></h1>   
                     <ul id="currentCity" style="list-style-type: none"></ul>                
                 </div>
-                <div id="fiveDay">
-                    <h2>5-Day Forecast:</h2>
-                    <div>
-
+                <div>
+                    <h2 id="forecastTitle">5-Day Forecast:</h2>
+                </div>
+                <div id="fiveDay" class="row">
+                    <div class="col-2">
+                        <ul id="secondDay" style="list-style-type: none"></ul>                
                     </div>
-                    <div>
-
+                    <div class="col-2">
+                        <ul id="thirdDay" style="list-style-type: none"></ul>                
                     </div>
-                    <div>
-
+                    <div class="col-2">
+                        <ul id="fourthDay" style="list-style-type: none"></ul>                
                     </div>            
-                    <div>
-
+                    <div class="col-2">
+                        <ul id="fifthDay" style="list-style-type: none"></ul>                
                     </div>
-                    <div>
-
+                    <div class="col-2">
+                        <ul id="sixthDay" style="list-style-type: none"></ul>                
                     </div>
                 </div>
             </div>    
